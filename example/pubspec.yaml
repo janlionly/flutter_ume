@@ -4,7 +4,7 @@ version: 1.0.1
 publish_to: none
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -21,14 +21,7 @@ dependencies:
   flutter_ume_kit_dio: 0.2.0
 
 dependency_overrides:
-  vm_service: ^9.4.0
-  flutter_ume:
-    path: ../
-
-dev_dependencies:
-  flutter_driver:
-    sdk: flutter
-  test: ^1.16.6
+  vm_service: ^14.0.0
   flutter_ume:
     path: ../
   flutter_ume_kit_ui:
@@ -45,6 +38,11 @@ dev_dependencies:
     path: ../kits/flutter_ume_kit_dio
   flutter_ume_kit_channel_monitor:
     path: ../kits/flutter_ume_kit_channel_monitor
+
+dev_dependencies:
+  flutter_driver:
+    sdk: flutter
+  test: ^1.16.6
   
 flutter:
   uses-material-design: true

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:system_info/system_info.dart';
+import 'package:system_info2/system_info2.dart';
 import 'package:flutter_ume/flutter_ume.dart';
 import 'icon.dart' as icon;
 import 'package:platform/platform.dart';
@@ -99,21 +99,22 @@ class _CpuInfoPageState extends State<CpuInfoPage> {
       },
     ]);
 
-    final processors = SysInfo.processors;
-    deviceInfo.add(
-      {'Number of processors': '${processors.length}'},
-    );
-    for (var processor in processors) {
-      deviceInfo.addAll([
-        {
-          '[${processors.indexOf(processor)}] Architecture':
-              '${processor.architecture}'
-        },
-        {'[${processors.indexOf(processor)}] Name': '${processor.name}'},
-        {'[${processors.indexOf(processor)}] Socket': '${processor.socket}'},
-        {'[${processors.indexOf(processor)}] Vendor': '${processor.vendor}'},
-      ]);
-    }
+    // TODO: Update for system_info2 API compatibility
+    // final processors = SysInfo.processors;
+    // deviceInfo.add(
+    //   {'Number of processors': '${processors.length}'},
+    // );
+    // for (var processor in processors) {
+    //   deviceInfo.addAll([
+    //     {
+    //       '[${processors.indexOf(processor)}] Architecture':
+    //           '${processor.architecture}'
+    //     },
+    //     {'[${processors.indexOf(processor)}] Name': '${processor.name}'},
+    //     {'[${processors.indexOf(processor)}] Socket': '${processor.socket}'},
+    //     {'[${processors.indexOf(processor)}] Vendor': '${processor.vendor}'},
+    //   ]);
+    // }
     Future.delayed(Duration(seconds: 1), () {
       setState(() {
         _deviceInfo = deviceInfo;

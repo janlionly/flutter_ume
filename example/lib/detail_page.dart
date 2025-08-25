@@ -6,11 +6,13 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final args = ModalRoute.of(context)!.settings.arguments;
-    return WillPopScope(
-      onWillPop: () async {
-        Navigator.pop(context, 'Pop result from ${this.runtimeType}');
-        return false;
+    return PopScope(
+      onPopInvoked: (didPop) {
+        if (!didPop) {
+          Navigator.pop(context, 'Pop result from ${this.runtimeType}');
+        }
       },
+      canPop: false,
       child: Scaffold(
           appBar: AppBar(
             title: Text(args.toString()), //?? 'Detail Page'),
