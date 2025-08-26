@@ -13,7 +13,10 @@ dependencies:
   tuple: ^2.0.0
   share_plus: ^10.0.0
   shared_preferences: ^2.0.6
-  flutter_ume: ">=2.0.0 <3.0.0"
+  flutter_ume:
+    git:
+      url: https://github.com/janlionly/flutter_ume.git
+      ref: master
 
 dev_dependencies:
   flutter_test:
