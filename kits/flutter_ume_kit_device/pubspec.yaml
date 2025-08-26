@@ -1,6 +1,6 @@
 name: flutter_ume_kit_device
 description: Device info kit for flutter_ume.
-version: 1.0.0
+version: 2.0.0
 homepage: https://github.com/bytedance/flutter_ume
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_ume: ">=1.0.0 <2.0.0"
+  flutter_ume: ">=2.0.0 <3.0.0"
   system_info2: ^4.0.0
   device_info_plus: ^10.0.0
   platform: ^3.1.0
@@ -23,5 +23,3 @@ dev_dependencies:
     git:
       url: https://github.com/smileShirely/flutter_coverage_badge.git
       ref: 59b7580f406bb712e9d9049c8c99212946e34f65
-
-flutter:

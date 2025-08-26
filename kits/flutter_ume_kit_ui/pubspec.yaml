@@ -1,6 +1,6 @@
 name: flutter_ume_kit_ui
 description: UI Kits for flutter_ume.
-version: 1.1.1
+version: 2.0.0
 homepage: https://github.com/bytedance/flutter_ume
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_ume: ">=1.0.0 <2.0.0"
+  flutter_ume: ">=2.0.0 <3.0.0"
   touch_indicator: ^2.0.0
 
   # for Cyclop
@@ -28,3 +28,4 @@ dev_dependencies:
       ref: 59b7580f406bb712e9d9049c8c99212946e34f65
 
 flutter:
+  uses-material-design: true
