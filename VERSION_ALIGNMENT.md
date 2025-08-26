@@ -44,7 +44,7 @@ device_info_plus: ^10.0.0
 system_info2: ^4.0.0
 
 # flutter_ume_kit_dio
-dio: ^4.0.0
+dio: ^5.9.0
 ```
 
 ## 🚀 统一的技术规格

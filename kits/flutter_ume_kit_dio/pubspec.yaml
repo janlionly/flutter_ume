@@ -15,7 +15,8 @@ dependencies:
       url: https://github.com/janlionly/flutter_ume.git
       ref: master
 
-  dio: ^4.0.0
+  dio: ^5.9.0
+  
 
 dev_dependencies:
   flutter_test:
